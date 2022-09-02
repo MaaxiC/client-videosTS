@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { Video } from './Video'
 
-const API = 'http://localhost:4000'
+const API = 'https://api-videosts.herokuapp.com'
 
 const getVideos = async () => {
     return await axios.get<Video[]>(`${API}/videos`)
